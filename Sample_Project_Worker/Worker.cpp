@@ -3,7 +3,7 @@
 Worker::Worker(const std::string& texturePath)
 	: m_AnimationHandler("Resources/worker.png", 6, 7, 200, 700, 8, 8), m_CurrentPos_X(0), m_CurrentPos_Y(0), m_AmountItemsCarried(0), m_Stamina(2), m_AxeSharpness(2), CurrentTarget(Worker::AtCrate),
 	m_Temp_Backgroundsprite(), m_Temp_Backgroundtexture(), m_Font(), m_Text(), 
-	m_PlanData("Press [Space] to request a plan\nVisual assets are placeholders\n\nThe current plan will be displayed in the console window.\n\nThe project does not implement actual behavior. Actions are simply timebased.")
+	m_PlanData("Press [Space] to request a plan\nVisual assets are placeholders\n\nThe current plan will be displayed in the console window.\n\nThe project does not implement actual behavior.\nActions are simply represented by timed text outputs.")
 {
 	m_Font.loadFromFile("Resources/font.ttf");
 	m_Text.setFont(m_Font);
