@@ -22,8 +22,14 @@
 
 #Binaries and Builds
 .vs/
-x64/
 x86/
+*/x64/
+!x64/Debug/openal32.dll
+!x64/Debug/sfml-audio-d-2.dll
+!x64/Debug/sfml-graphics-d-2.dll
+!x64/Debug/sfml-network-d-2.dll
+!x64/Debug/sfml-system-d-2.dll
+!x64/Debug/sfml-window-d-2.dll
 *.user
 
 #CMake
