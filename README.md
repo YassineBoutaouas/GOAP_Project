@@ -1,5 +1,11 @@
 # Goal-Oriented Action Planning
-The project is a follow up to a bachelor thesis as part of the study program Animation&Game at the UAS Darmstadt. Visual assets such as sprites are developed by third party.
+The project is a follow up to a bachelor thesis as part of the study program Animation&Game at the UAS Darmstadt. Visual assets such as sprites are developed by third party. 
+
+It provides a solution to a Goal-Oriented Action Planning AI which uses simple threading, plan validation, recursive goal search and more. [GOAP implementation](https://yassineboutaouas.github.io/Portfolio/goap.html)
+It is based on the implementation from Jeff Orkin and Peter Higley [See](https://www.gdcvault.com/play/1022019/Goal-Oriented-Action-Planning-Ten)
+
+<img width="1920" alt="Screenshot of working C++ program" src="https://github.com/YassineBoutaouas/GOAP_Project/assets/127434490/d06732b4-c663-4012-8f60-17ecd7e25b0b" Screenshot of working C++ program>
+
 
 ## Project Structure
 The project was developed with C++ 17 for Windows. It uses the sfml [See](https://www.sfml-dev.org/) to allow for further development using game assets, graphics, sounds etc.
@@ -22,17 +28,26 @@ The project was developed with C++ 17 for Windows. It uses the sfml [See](https:
     - Sfml
     - Sample_Project_Worker(.lib)
   
-  ##Important directories:
+  ## Important directories:
   The GOAP AI together with the profiler is designed to work independently to the rest of the projects.
 
   - .../AI_Core
   - .../Profiler
 
-##In order to create and extend an agent:
+## In order to create and extend an agent:
 
-- Create a class instance of Agent
-- Create a WorldState instance to represent a global world state and populate it with values using the WorldState.Add(...) function
-- Create a WorldState instance to represent a current goal and populate it with values just like the step before
-- Use the Agent.ActionPlanner->AddWorldState(worldState) function to add the world state.
-- Use the Agent.ActionPlanner->AddGoal(goal) function to add the goal.
-- 
+1. Create a class instance of Agent
+2. Create a min. of two WorldState instances to represent a global world state and a goal.
+3. Populate them with values using the WorldState.Add(...) function
+4. Use the Agent.ActionPlanner->AddWorldState(worldState) and the Agent.ActionPlanner->AddGoal(goal) function to add the world state and the goal respectively.
+5. Create new actions, preovide them with preconditions and effects through the use of Action.Preconditions.Add(...) or Action.Effects.Add(...)
+6. Add the actions to the planner using Agent.ActionPlanner->AddAction(...)
+7. Last, a plan can be requested using Agent.ActionPlanner->RequestPlan()
+
+** A full example implementation is provided in the Sample_Project_Worker(.lib) **
+
+### Full list of third party assets
+
+- Graphics library: Sfml - [See](https://www.sfml-dev.org/)
+- Texture assets (character & background): Oak Woods — Environment Asset - [See](https://brullov.itch.io/oak-woods)
+- Font assets: VCR OSD Mono - [See](https://www.dafont.com/de/vcr-osd-mono.font)
