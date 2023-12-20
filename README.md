@@ -1,7 +1,7 @@
 # Goal-Oriented Action Planning
 The project is a follow up to a bachelor thesis as part of the study program Animation&Game at the UAS Darmstadt. Visual assets such as sprites are developed by third party. 
 
-It provides a solution to a Goal-Oriented Action Planning AI which uses simple threading, plan validation, recursive goal search and more [GOAP implementation by me](https://yassineboutaouas.github.io/Portfolio/goap.html).
+It provides a solution to a Goal-Oriented Action Planning AI which uses simple threading, plan validation, recursive goal search and more ([My GOAP implementation])(https://yassineboutaouas.github.io/Portfolio/goap.html).
 It is based on the implementation from Jeff Orkin and Peter Higley [See](https://www.gdcvault.com/play/1022019/Goal-Oriented-Action-Planning-Ten)
 
 <img width="1920" alt="Screenshot of working C++ program" src="https://github.com/YassineBoutaouas/GOAP_Project/assets/127434490/d06732b4-c663-4012-8f60-17ecd7e25b0b">
