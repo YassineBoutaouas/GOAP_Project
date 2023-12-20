@@ -48,6 +48,6 @@ The project was developed with C++ 17 for Windows. It uses the ([sfml](https://w
 
 ### Full list of third party assets
 
-- Graphics library: Sfml - [See](https://www.sfml-dev.org/)
-- Texture assets (character & background): Oak Woods — Environment Asset - [See](https://brullov.itch.io/oak-woods)
-- Font assets: VCR OSD Mono - [See](https://www.dafont.com/de/vcr-osd-mono.font)
+- Graphics library: [Sfml](https://www.sfml-dev.org/)
+- Texture assets (character & background): [Oak Woods — Environment Asset](https://brullov.itch.io/oak-woods)
+- Font assets: [VCR OSD Mono](https://www.dafont.com/de/vcr-osd-mono.font)
