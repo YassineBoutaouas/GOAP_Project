@@ -44,7 +44,7 @@ The project was developed with C++ 17 for Windows. It uses the ([sfml](https://w
 6. Add the actions to the planner using Agent.ActionPlanner->AddAction(...)
 7. Last, a plan can be requested using Agent.ActionPlanner->RequestPlan()
 
-** A full example implementation is provided in the Sample_Project_Worker(.lib) **
+**A full example implementation is provided in the Sample_Project_Worker(.lib)**
 
 ### Full list of third party assets
 
