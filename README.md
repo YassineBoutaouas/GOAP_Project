@@ -8,12 +8,12 @@ It is based on the implementation from Jeff Orkin and Peter Higley [See](https:/
 Screenshot of the working C++ application. Current plan highlighted yellow.
 
 ## Project Structure
-The project was developed with C++ 17 for Windows. It uses the sfml [See](https://www.sfml-dev.org/) to allow for further development using game assets, graphics, sounds etc.
+The project was developed with C++ 17 for Windows. It uses the ([sfml](https://www.sfml-dev.org/)) to allow for further development using game assets, graphics, sounds etc.
 
 1. AI_Core (.lib): Contains the GOAP-AI itself and all of the classes it needs to operate.
    - References:
     - Profiler(.lib)
-2. Profiler (.lib): A simple project that generates profiling data that can be visually shown in Google Chrome based on this implementation - [See](https://gist.github.com/TheCherno/31f135eea6ee729ab5f26a6908eb3a5e)
+2. Profiler (.lib): A simple project that generates profiling data that can be visually shown in Google Chrome based on this implementation - ([See](https://gist.github.com/TheCherno/31f135eea6ee729ab5f26a6908eb3a5e))
 3. Game_Core (.lib): Contains general game related classes and a game manager which provides an event system to create a game loop. Additionally, it manages object instances.
    - References:
     - Profiler(.lib)
