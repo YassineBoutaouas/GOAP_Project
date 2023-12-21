@@ -12,21 +12,21 @@ The project was developed with C++ 17 for Windows. It uses the [sfml](https://ww
 
 1. AI_Core (.lib): Contains the GOAP AI itself and all of the classes it needs to operate.
    - References:
-    -- Profiler(.lib)
+     - Profiler(.lib)
 2. Profiler (.lib): A simple project that generates performance data that can be visually shown in Google Chrome. ([See implementation](https://gist.github.com/TheCherno/31f135eea6ee729ab5f26a6908eb3a5e))
 3. Game_Core (.lib): Contains general game related classes and a game manager which provides an event system in order to create a game loop. Additionally, it manages object instances.
    - References:
-    -- Profiler(.lib)
-    -- Sfml
+     - Profiler(.lib)
+     - Sfml
 4. Sample_Project_Worker (.lib): Implements the GOAP AI and provides an example of a working agent. It also implements placeholder visuals using the sfml library.
    - References:
-    -- AI_Core(.lib)
-    -- Game_Core(.lib)
-    -- Sfml
+     - AI_Core(.lib)
+     - Game_Core(.lib)
+     - Sfml
 5. GOAP_Project (.exe): Provides an entry point to the program and calls game manager events to create a game loop.
    - References:
-    -- Sfml
-    -- Sample_Project_Worker(.lib)
+     - Sfml
+     - Sample_Project_Worker(.lib)
   
   ## Important directories:
   The GOAP AI together with the profiler is designed to work independently to the rest of the project.
