@@ -4,13 +4,12 @@
 class Agent {
 protected:
 	ActionPlanner* m_ActionPlanner;
+	virtual void UpdateCurrentState();
 
 public:
 	Agent();
 	Agent(const Agent&) = delete;
 	~Agent();
-
-	virtual void UpdateCurrentState();
 
 	friend std::ostream& operator<< (std::ostream& stream, Agent& other);
 };
